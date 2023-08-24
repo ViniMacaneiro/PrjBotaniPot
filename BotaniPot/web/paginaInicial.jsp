@@ -4,19 +4,19 @@
         <title>BotanyPot</title>
         <meta charset="UTF-16">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Estilos/paginaInicial.css" type="text/css">
+        <link rel="stylesheet" href="web\Estilos\paginaInicial.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,regular,500,600,700,800" rel="stylesheet" />
-        <link rel="shortcut icon" href="Imagens/icone.png"/>
+        <link rel="shortcut icon" href="web\Imagens\icone.png"/>
     </head>
     
         <div class="box">
             <div class="caixaSelecao">
-                <img src="Imagens/icone.png" alt="icone">
+                <img src="web\Imagens\icone.png" alt="icone">
                 <a href="index.html" class="iconeLogout"></a>
                     <h1 class="tituloPagina">BotaniPot</h1> <br>
                     <hr id="linhaVerde">
                     <div id="texto">
-                                                                        <!-- Puxa o nome e o id do cliente que estão guardados na URL -->
+                                                                        <!-- Puxa o nome e o id do cliente que estÃ£o guardados na URL -->
                         <% 
                            int    vIdCliente = Integer.parseInt(request.getParameter("idCliente")); 
                            String nomeCliente = request.getParameter("nomecliente");
@@ -49,7 +49,7 @@
                                             <label id="titulo"><b>Tipo de solo</b></label><br>
                                             <input type="radio" name="solo" value="seco" onclick="soloSeco()"> Seco <br>
                                             <input type="radio" name="solo" value="encharcado" onclick="soloEncharcado()"> Encharcado <br>
-                                            <input type="radio" name="solo" value="umido" onclick="soloUmido()"> Úmido <br>
+                                            <input type="radio" name="solo" value="umido" onclick="soloUmido()"> Ãšmido <br>
                                             <input type="radio" name="solo" value="personalizado" checked id="personalizado"> Personalizado <br>
                                             
                                             <label><b>Porcentagem de Umidade</b></label>
@@ -60,7 +60,7 @@
                                             <input type="range" id="sliderSol" name="porcentagemSol" min="0" max="100" step="1">
                                             <span id="valorSliderSol">50%</span> <br>
                                             
-                                            <input type="number" class="cadastrarNome" placeholder="Quantidade de Água (ml)" name="aguaRecomendada" required value="">
+                                            <input type="number" class="cadastrarNome" placeholder="Quantidade de Ã¡gua (ml)" name="aguaRecomendada" required value="">
                                             
                                             <input type="submit" class="cadastroHorta">
                                             </form>
@@ -68,7 +68,7 @@
                                 </ul>
                             </div>
                         </div>
-                                                                        <!-- Área do JavaScript -->
+                                                                        <!-- Ãrea do JavaScript -->
                         <script>
                             const abrirModalBtn                 = document.getElementById('abrirModal');
                             const modal                         = document.getElementById('modal');

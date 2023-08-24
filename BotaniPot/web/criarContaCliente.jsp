@@ -20,12 +20,12 @@
         
         if (equals(senha) == equals(senhaConfirmar)) {
             if(cli.incluirCliente()){
-                response.sendRedirect("index.html");
+                response.sendRedirect("web\index.html");
                 } else {
-                response.sendRedirect("erro.html");
+                response.sendRedirect("web\erro.html");
                 }
         } else {
-            response.sendRedirect("senhaInvalida.html");
+            response.sendRedirect("web\senhaInvalida.html");
         }
         %>
     </body>
