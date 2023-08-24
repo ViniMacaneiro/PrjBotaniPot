@@ -9,18 +9,32 @@
         <link rel="shortcut icon" href="Imagens/icone.png"/>
     </head>
     
-        <div class="box" onload="consultarClienteId()">
+        <div class="box">
             <div class="caixaSelecao">
                 <img src="Imagens/icone.png" alt="icone">
                 <a href="index.html" class="iconeLogout"></a>
                     <h1 class="tituloPagina">BotaniPot</h1> <br>
                     <hr id="linhaVerde">
                     <div id="texto">
-                        <%
-                        out.write("Bem vindo " + request.getParameter("nomecliente"));
-                        %>                        
-                        <button type="button" value="Cadastrar Horta" class="botaoCadastro" id="abrirModal">Cadastrar Horta</button>
+                                                                        <!-- Puxa o nome e o id do cliente que estão guardados na URL -->
+                        <% 
+                           int    vIdCliente = Integer.parseInt(request.getParameter("idCliente")); 
+                           String nomeCliente = request.getParameter("nomecliente");
+                        %>
                         
+                        <h2>
+                            <%
+                            out.write("Bem vindo " + request.getParameter("nomecliente"));
+                            %>
+                        </h2>
+                                                                        <!-- Abre modal de cadastro de hortas -->
+                        <button type="button" value="Cadastrar Horta" class="botaoCadastro" id="abrirModal">Cadastrar Horta</button>
+                       
+                                                                        <!-- Puxa lista de hortas -->
+                        <form action="listarHortas.jsp" method="post" id="formPegaHorta">
+                            <input type="hidden" id="idPegaHorta" name="idPegaHorta" value="<%out.write(""+vIdCliente);%>">
+                        </form>
+                                                                        <!-- Modal de Cadastro -->
                         <div id="modal" class="modal">
                             <div class="modal-conteudo">
                                 <span class="fechar" id="fecharModal"></span>
@@ -28,9 +42,7 @@
                                     <li><h2>Cadastrar Horta</h2></li>
                                     <li><form action="cadastraHorta.jsp" method="post">
                                             <input type="text" class="cadastrarNome" placeholder="Nome da Horta" name="nomeHorta" required>
-                                            <% int    vIdCliente = Integer.parseInt(request.getParameter("idCliente")); 
-                                               String nomeCliente = request.getParameter("nomecliente");
-                                            %>
+                                            
                                             <input type='hidden' id='idCliente' name='idCliente' value="<% out.write(""+vIdCliente);%>">
                                             <input type='hidden' id='nomeCliente' name='nomeCliente' value="<% out.write(nomeCliente);%>">
 
@@ -56,7 +68,7 @@
                                 </ul>
                             </div>
                         </div>
-                                                                        <!-- Área do Java -->
+                                                                        <!-- Área do JavaScript -->
                         <script>
                             const abrirModalBtn                 = document.getElementById('abrirModal');
                             const modal                         = document.getElementById('modal');
@@ -137,6 +149,14 @@
                             
                             return = idPegado;}
                             
+                            
+                        </script>
+                        
+                        <script>
+                            
+                          // setTimeout(function() {
+                          // document.getElementById("formPegaHorta").submit();
+                          // }, 2000); 
                             
                         </script>
                         

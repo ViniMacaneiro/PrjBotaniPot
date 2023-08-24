@@ -1,4 +1,4 @@
-<%@page import="prototipobotani.Cliente"%>
+<%@page import="src\java\prototipobotani\Cliente.java"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
