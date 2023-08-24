@@ -1,4 +1,4 @@
-<%@page import="prototipobotani.Horta"%>
+<%@page import="src\java\prototipobotani\Horta.java"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -31,9 +31,7 @@
             response.sendRedirect("paginaInicial.jsp?idCliente=" + vidCliente + "&nomecliente=" + vNomeCliente);
             }
             else {
-            %>
             alert("Deu ruim");
-            <%
             }
         %>
     </body>
