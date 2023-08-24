@@ -1,0 +1,152 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    background: url(../Imagens/fundo.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#inserirTexto {
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+    border-bottom-width: 2px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #146300;
+
+    background-color: unset;
+    
+    width: 383px;
+
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+
+    margin: auto;
+}
+
+#TextoPagina {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 15px;
+}
+
+#TextoPaginaMenor {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.caixaSelecaoMenor {
+    position: absolute;
+    width: 489px;
+    height: 330px;
+
+    background: #F9FFEB;
+
+    border-top: 7px solid #079504;
+    border-bottom: 7px solid #079504;
+
+    padding: 10px;
+
+    border-radius: 3px;
+}
+
+.botaoInsert {
+    display: inline-block;
+    width: 130px;
+    height: 15px;
+    padding: 10px;
+    background-color: #079504;
+    color: #F9FFEB;
+    text-decoration: none;
+    font-family: 'Dosis';
+    font-size: 15px;
+
+    text-align: center;
+
+    margin-top: 50px;
+    margin-left: 75px;
+
+    border-radius: 3px;
+}
+
+.botaoInsert:hover {
+    background-color: #146300;
+}
+
+.tituloPagina {
+    position: absolute;
+    width: 151px;
+    height: 51px;
+    left: calc(44% - 151px/2 - 90px);
+    top: calc(44% - 51px/2 - 152.5px);
+
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
+
+    margin-top: 61px;
+    margin-left: 7px;
+    color: #000000;
+}
+
+#textoPequeno{
+font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #000000;
+    margin-left: 15px;
+}
+
+.botaoVoltar {
+    display: inline-block;
+    width: 130px;
+    height: 15px;
+    padding: 10px;
+    background-color: #079504;
+    color: #F9FFEB;
+    text-decoration: none;
+    font-family: 'Dosis';
+    font-size: 15px;
+
+    text-align: center;
+
+    margin-top: 50px;
+    margin-left: 45px;
+
+    border-radius: 3px;
+  }
+
+.botaoVoltar:hover {
+    background-color: #146300;
+}

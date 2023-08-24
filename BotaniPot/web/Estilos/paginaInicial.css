@@ -1,0 +1,247 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    background: url(../Imagens/fundo.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Dosis';
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#login {
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+    border-bottom-width: 2px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #146300;
+
+    background-color: unset;
+    
+    width: 383px;
+
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+
+    margin: auto;
+}
+
+.caixaSelecao {
+    position: absolute;
+    width: 70%;
+    height: 98vh;
+
+    background: #F9FFEB;
+
+    border-top: 7px solid #079504;
+    border-bottom: 7px solid #079504;
+
+    padding: 10px;
+}
+
+.botaoInsert {
+    width: 30%;
+    padding: 10px;
+    background-color: #079504;
+    color: #F9FFEB;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    position: inherit;
+
+    margin-top: 50px;
+    margin-left: 287px;
+}
+
+.botaoInsert:hover {
+    background-color: #146300;
+}
+
+.redefinaSenha,
+.criarConta {
+    position: inherit;
+
+    margin-left: 52px;
+
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 5px;
+
+    color: #000000;
+
+
+}
+
+.tituloPagina {
+    position: absolute;
+    width: 151px;
+    height: 51px;
+    left: calc(15% - 80px/2 - 100px);
+    top: calc(15% - 80px/2 - 100px);
+
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
+    /* identical to box height */
+
+    margin-left: 7px;
+    color: #000000;
+}
+
+#linhaVerde {
+    border-color: #146300;
+    width: 90%;
+}
+
+.iconeLogout {
+    display: inline-block;
+    background-image: url(../Imagens/logout.png);
+    width: 48px;
+    height: 60px;
+    background-size: cover;
+    margin-left: 86%;
+  }
+
+#texto {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.botaoCadastro {
+    position: absolute;
+    width: 143px;
+    height: 33px;
+    left: 82%;
+    top: 140px;
+
+    background: #079504;
+
+    border-width: 0px;
+    border-radius: 3px;
+
+    color: #F9FFEB;
+    font-family: 'Dosis';
+    font-size: 17px;
+}
+
+.botaoCadastro:hover {
+    cursor: pointer;
+    background: #146300;
+}
+
+.cadastroHorta {
+    position:inherit;
+    width: 120px;
+    height: 27px;
+    
+    background: #079504;
+    
+    border-width: 0px;
+    border-radius: 3px;
+    
+    font-family: 'Dosis';
+    color: #F9FFEB;
+    font-size: 17px;
+    
+    margin-top: 10px;
+    margin-left: 63%
+}
+
+.cadastroHorta:hover {
+    cursor: pointer;
+    background: #146300;
+}
+
+.cadastrarNome {
+    position: relative;
+    
+    display: flex;
+
+
+    border-bottom-width: 2px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #146300;
+
+    background-color: unset;
+    
+    width: 350px;
+
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    
+    margin-bottom: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-conteudo {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 15px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 7px solid #079504;
+    border-bottom: 7px solid #079504; 
+    max-width: 480px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilo do botão de fechar */
+.fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+#titulo {
+    font-size: 20px; 
+}
